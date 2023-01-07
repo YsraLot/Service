@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D1CECE"
+    android:background="#fff"
     tools:context=".PaimActivity">
 
     <LinearLayout
@@ -54,8 +54,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:gravity="center"
-            android:text="Gestion des cartes"
-            android:textColor="#FF5722"
+            android:text="Card management"
+            android:textColor="@color/galax"
             android:textSize="35sp"
             android:textStyle="bold" />
 
@@ -65,7 +65,7 @@
             android:layout_height="100dp"
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
-            app:srcCompat="@drawable/pai" />
+            app:srcCompat="@drawable/pay" />
 
         <TextView
             android:id="@+id/textView28"
@@ -73,7 +73,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:gravity="center"
-            android:text="Facilitez vos paiements"
+            android:text="Make your payments easier"
             android:textColor="#0B0B0B"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -86,7 +86,7 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="15dp"
             android:gravity="center"
-            android:text="Ajoutez une carte ou votre methode de paiement preferee"
+            android:text="Add a card or your preferred payment method"
             android:textColor="#0B0B0B"
             android:textSize="18sp"
             android:textStyle="normal" />
@@ -113,7 +113,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.565"
-                app:srcCompat="@drawable/paim" />
+                app:srcCompat="@drawable/pay" />
 
             <TextView
                 android:id="@+id/texte1"
@@ -140,7 +140,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="10dp"
-            android:background="@drawable/cart_back">
+            android:background="@drawable/button_gradient_bg">
 
             <ImageView
                 android:id="@+id/imageView4"
@@ -154,16 +154,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="1.0"
-                app:srcCompat="@drawable/plus" />
+                app:srcCompat="@drawable/add" />
 
             <TextView
                 android:id="@+id/textView31"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="100dp"
-                android:text="Ajouter"
-                android:textColor="#040404"
-                android:textSize="18sp"
+                android:text="Add"
+                android:textColor="#fff"
+                android:textSize="19sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -186,8 +186,8 @@
                 android:layout_height="70dp"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                android:backgroundTint="#FF5722"
-                android:text="Annuler"
+                android:backgroundTint="@color/galax"
+                android:text="Cancel"
                 android:visibility="visible" />
 
             <Button
@@ -196,8 +196,8 @@
                 android:layout_height="70dp"
                 android:layout_margin="10dp"
                 android:layout_weight="1"
-                android:backgroundTint="#FF5722"
-                android:text="Confirme"
+                android:backgroundTint="@color/galax"
+                android:text="Confirm"
                 android:visibility="visible" />
 
         </LinearLayout>
@@ -221,7 +221,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="18dp"
                     android:gravity="center"
-                    android:text="     Ajouter la carte"
+                    android:text="Add card"
                     android:textColor="#050505"
                     android:textSize="16dp"
                     android:textStyle="bold"
@@ -233,7 +233,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:gravity="center"
-                    android:text="Veuillez remplir les champs"
+                    android:text="Please fill the form"
                     android:textColor="#050505"
                     android:textSize="15sp"
                     android:textStyle="normal" />
@@ -245,7 +245,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="10dp"
-                    android:text="Numero de la carte"
+                    android:text="Card number"
                     android:textColor="#050505"
                     android:textSize="14sp"
                     android:textStyle="bold" />
@@ -264,7 +264,7 @@
                         android:layout_marginStart="30dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginEnd="40dp"
-                        android:drawableEnd="@drawable/paim"
+                        android:drawableEnd="@drawable/pay"
                         android:ems="10"
                         android:hint="1234 1234 1234 1234"
                         android:inputType="numberDecimal"
@@ -386,8 +386,8 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="10dp"
-                    android:backgroundTint="#FF5722"
-                    android:text="Ajouter la carte" />
+                    android:backgroundTint="@color/galax"
+                    android:text="Add to your card" />
 
             </LinearLayout>
 

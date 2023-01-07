@@ -253,7 +253,7 @@
                     android:id="@+id/homeBtn"
                     android:layout_width="0dp"
                     android:layout_height="53dp"
-                    android:layout_marginTop="2dp"
+                    android:layout_marginTop="2sp"
                     android:layout_weight="0.2"
                     android:orientation="vertical">
 
@@ -262,15 +262,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/hhhhhh" />
+                        app:srcCompat="@drawable/home2" />
 
                     <TextView
                         android:id="@+id/textView18"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Accueil"
+                        android:text="Dashboard"
                         android:textAlignment="center"
-                        android:textColor="#676767"
+                        android:textColor="@color/viol"
                         android:textSize="12sp" />
 
                 </LinearLayout>
@@ -288,7 +288,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/poooo" />
+                        app:srcCompat="@drawable/user" />
 
                     <TextView
                         android:id="@+id/textView188"
@@ -296,7 +296,7 @@
                         android:layout_height="wrap_content"
                         android:text="Profile"
                         android:textAlignment="center"
-                        android:textColor="#676767"
+                        android:textColor="#A786FC"
                         android:textSize="12sp" />
 
                 </LinearLayout>
@@ -314,15 +314,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/cccccccccccccccccccc" />
+                        app:srcCompat="@drawable/contact" />
 
                     <TextView
                         android:id="@+id/textView1888"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Panier"
+                        android:text="Demand"
                         android:textAlignment="center"
-                        android:textColor="#676767"
+                        android:textColor="#A786FC"
                         android:textSize="12sp" />
 
                 </LinearLayout>
@@ -340,15 +340,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/menu2" />
+                        app:srcCompat="@drawable/list2" />
 
                     <TextView
                         android:id="@+id/textView189"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Menu"
+                        android:text="Services"
                         android:textAlignment="center"
-                        android:textColor="#676767"
+                        android:textColor="@color/galax"
                         android:textSize="12sp" />
 
                 </LinearLayout>
@@ -366,15 +366,15 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/hhhhhhhhhhhhhhhhhhhhh" />
+                        app:srcCompat="@drawable/chat" />
 
                     <TextView
                         android:id="@+id/textView186"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Paramètre"
+                        android:text="Chat"
                         android:textAlignment="center"
-                        android:textColor="#676767"
+                        android:textColor="#A786FC"
                         android:textSize="12sp" />
 
                 </LinearLayout>
@@ -382,5 +382,6 @@
             </LinearLayout>
         </com.google.android.material.bottomappbar.BottomAppBar>
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

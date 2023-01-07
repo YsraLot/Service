@@ -26,7 +26,7 @@
                 android:layout_width="366dp"
                 android:layout_height="370dp"
                 android:layout_margin="24dp"
-                app:srcCompat="@drawable/burger" />
+                app:srcCompat="@drawable/userpng" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -50,13 +50,13 @@
                     android:layout_height="40dp"
                     android:layout_gravity="center_horizontal"
                     android:layout_margin="8dp"
-                    android:background="@drawable/gey">
+                    android:background="@color/white">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:id="@+id/constraintLayout3"
                         android:layout_width="125dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/yellow_barr"
+
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="1.0"
@@ -75,7 +75,7 @@
                             app:layout_constraintStart_toStartOf="@+id/minusCardBtn"
                             app:layout_constraintTop_toTopOf="parent"
                             app:layout_constraintVertical_bias="0.0"
-                            app:srcCompat="@drawable/plus" />
+                             />
 
                         <ImageView
                             android:id="@+id/minusCardBtn"
@@ -88,12 +88,12 @@
                             app:layout_constraintHorizontal_bias="1.0"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/minus" />
+                            />
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="33dp"
                             android:layout_height="34dp"
-                            android:background="@drawable/cart_back"
+                            android:background="@color/white"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -103,7 +103,7 @@
                                 android:id="@+id/numberItemTxt"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="1"
+                                android:text=""
                                 android:textColor="#3d33a8"
                                 android:textSize="20sp"
                                 android:textStyle="bold"
@@ -118,7 +118,7 @@
                         android:id="@+id/pricetxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$0"
+                        android:text=""
                         android:textColor="#373b54"
                         android:textSize="20sp"
                         android:textStyle="bold"
@@ -201,7 +201,7 @@
                             android:id="@+id/imageView26"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            app:srcCompat="@drawable/flame" />
+                            />
 
                         <TextView
                             android:id="@+id/calory"
@@ -211,7 +211,6 @@
                             android:layout_marginTop="2dp"
                             android:layout_weight="1"
                             android:paddingStart="8dp"
-                            android:text="70 calories"
                             android:textAlignment="viewStart"
                             android:textColor="#373b54"
                             android:textSize="15sp"
@@ -273,12 +272,12 @@
                         android:layout_height="match_parent"
                         android:layout_margin="8dp"
                         android:layout_weight="0.5"
-                        android:background="@drawable/yellow_btn"
-                        android:drawableStart="@drawable/sh"
+                        android:background="@color/galax"
+
                         android:drawablePadding="5dp"
                         android:elevation="3dp"
                         android:gravity="center"
-                        android:text="Add to Cart"
+                        android:text="Apply"
                         android:textColor="#ffffff"
                         android:textSize="20sp"
                         android:textStyle="bold" />

@@ -35,59 +35,23 @@ holder.categoryName.setText(categoryDS.get(position).getTitre());
 String picUrl="";
 switch (position) {
     case 0: {
-        picUrl = "pizza";
+        picUrl = "household";
         break;
     }
     case 1: {
-        picUrl = "bg";
+        picUrl = "cleaning";
         break;
     }
     case 2: {
-        picUrl = "ff";
+        picUrl = "beauty";
         break;
     }
 
     case 3: {
-        picUrl = "sandwish";
-        break;
-    }
-    case 4: {
-        picUrl = "tacooos";
-        break;
-    }
-    case 5: {
-        picUrl = "spakiti";
-        break;
-    }
-    case 6: {
-        picUrl = "ss";
-        break;
-    }
-    case 7: {
-        picUrl = "gratin";
+        picUrl = "pets";
         break;
     }
 
-    case 8: {
-        picUrl = "l1";
-        break;
-    }
-    case 9: {
-        picUrl = "cs1";
-        break;
-    }
-    case 10: {
-        picUrl = "pqs";
-        break;
-    }
-    case 11: {
-        picUrl = "salade";
-        break;
-    }
-    case 12: {
-        picUrl = "coc";
-        break;
-    }
 }
     int drawableReouceId=holder.itemView.getContext().getResources().getIdentifier(picUrl,"drawable",holder.itemView.getContext().getPackageName());
 Glide.with(holder.itemView.getContext()).load(drawableReouceId).into(holder.categotyPic);
