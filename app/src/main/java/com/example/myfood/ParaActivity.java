@@ -72,12 +72,21 @@ TextView prenom,nom,email,tele;
         pr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(ParaActivity.this,ProfileActivity.class);
-                intent.putExtra("prenom",prenom.getText().toString());
-                intent.putExtra("nom",nom.getText().toString());
-                intent.putExtra("email",email.getText().toString());
-                intent.putExtra("tele",tele.getText().toString());
-                startActivity(intent);
+                String url = "tel:0681234444";
+
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+            }
+        });
+        p.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String url = "sms:Hi im a customer i want help";
+
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
             }
         });
         l1.setOnClickListener(new View.OnClickListener() {
