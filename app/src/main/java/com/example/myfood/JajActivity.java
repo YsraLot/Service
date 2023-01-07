@@ -22,10 +22,10 @@ public class JajActivity extends AppCompatActivity {
         recPop=findViewById(R.id.jaj);
         recPop.setLayoutManager(linearLayoutManager);
         ArrayList<FoodD> foodDS=new ArrayList<>();
-        foodDS.add(new FoodD("Recette poulet","j1","Ils contient de 11 herbes et épices, ce qui est formidable, mais ce n'est pas ce que vous goûtez lorsque vous mordez dans un croustillant très savoureux », a expliqué Bayer.« Vous goûtez sucré, salé et umami, ou salé.",6.0,4,25));
-        foodDS.add(new FoodD("Recette Poulet","j2","Recette Poulet aux olives et citrons confits",9.0,4,25));
-        foodDS.add(new FoodD("Riz avec Poulet","j3","poulet avec riz , carottes coupées , poivrons vert,et oignons rouges",4.5,4,25));
-        foodDS.add(new FoodD("Viande hachée","j4","kifta chiken",3.0,4,25));
+        foodDS.add(new FoodD("Makeup service","makeup","Ils contient de 11 herbes et épices, ce qui est formidable, mais ce n'est pas ce que vous goûtez lorsque vous mordez dans un croustillant très savoureux », a expliqué Bayer.« Vous goûtez sucré, salé et umami, ou salé.",6.0,4,25));
+        foodDS.add(new FoodD("Hairdressing service","hairdress","Recette Poulet aux olives et citrons confits",9.0,4,25));
+        foodDS.add(new FoodD("Manicure and pedicure service","manicure","poulet avec riz , carottes coupées , poivrons vert,et oignons rouges",4.5,4,25));
+        foodDS.add(new FoodD("Beautician service","sir","kifta chiken",3.0,4,25));
 
         adapter2=new PizaAdapter(foodDS);
         recPop.setAdapter(adapter2);

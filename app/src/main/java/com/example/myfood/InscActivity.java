@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -24,6 +25,10 @@ public ConstraintLayout ins;
     public FirebaseAuth mAuth;
     private FirebaseDatabase database;
     private DatabaseReference myRef,mn;
+
+    // In InscActivity.java add
+    public TextView gotoProviderDash;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +40,18 @@ public ConstraintLayout ins;
 
         ins=findViewById(R.id.ins);// layout inscription
         mAuth=FirebaseAuth.getInstance();
+
+
+// provider dashboard
+        gotoProviderDash=findViewById(R.id.providerDash);
+        gotoProviderDash.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(InscActivity.this,ProviderDash.class);
+                startActivity(intent);
+            }
+        });
+
 
 //button pour l sig up
         ins.setOnClickListener(new View.OnClickListener() {
@@ -97,12 +114,25 @@ public ConstraintLayout ins;
                 Toast.makeText(InscActivity.this, "Bien Enregistre", Toast.LENGTH_SHORT).show();
 
 
+                //Intent intent=new Intent(InscActivity.this,MainActivity.class);
+                //startActivity(intent);
+//add info to profile interface
+
+
+//----------------- zidi had  code f InscActivity.java f line 103
+                // w mashi  Intent intent=new Intent(InscActivity.this,MainActivity.class);
+                //          startActivity(intent);
+                // hado kano deja
                 Intent intent=new Intent(InscActivity.this,MainActivity.class);
+                intent.putExtra("prenom",p.getText().toString());
+                intent.putExtra("nom",n.getText().toString());
+                intent.putExtra("email",e.getText().toString());
+                intent.putExtra("tele",t.getText().toString());
                 startActivity(intent);
-
-
+                //----------------
             }
         });
 
     }
     }
+

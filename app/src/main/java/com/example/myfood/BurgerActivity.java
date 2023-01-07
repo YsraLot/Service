@@ -22,12 +22,10 @@ public class BurgerActivity extends AppCompatActivity {
         recPop=findViewById(R.id.burg);
         recPop.setLayoutManager(linearLayoutManager);
         ArrayList<FoodD> foodDS=new ArrayList<>();
-        foodDS.add(new FoodD("Poulet","b1","Burger avec filet de poulet ananas roquette tomates,cheese  et sauce sur fond blanc",4.5,4,25));
-        foodDS.add(new FoodD("Double Poulet","b2","Burger avec double filet de poulet ananas roquette tomates,cheese et sauce sur fond blanc",9.0,4,25));
-        foodDS.add(new FoodD("Viande hachée ","b3","Burger avec flit de Kefta ananas roquette tomates ,cheese et sauce sur fond blanc",4.5,4,25));
-        foodDS.add(new FoodD("Double Viande hachée","b4","Burger avec double flit de Kefta ananas roquette tomates ,cheese et sauce sur fond blanc",9.0,4,25));
-        foodDS.add(new FoodD("Poisson","b5","Burger avec double flit de poisson ananas roquette tomates ,cheese et sauce sur fond blanc",4.5,4,25));
-        foodDS.add(new FoodD("Double Poisson","b6","Burger avec double flit de poisson ananas roquette tomates ,cheese et sauce sur fond blanc",9.0,4,25));
+        foodDS.add(new FoodD("Cleaning home service","homeclean","Burger avec filet de poulet ananas roquette tomates,cheese  et sauce sur fond blanc",4.5,4,25));
+        foodDS.add(new FoodD("Laundry service","laundry","Burger avec double filet de poulet ananas roquette tomates,cheese et sauce sur fond blanc",9.0,4,25));
+        foodDS.add(new FoodD("Sterilization home service","nettoyage","Burger avec flit de Kefta ananas roquette tomates ,cheese et sauce sur fond blanc",4.5,4,25));
+        foodDS.add(new FoodD("Dishes cleaning service","dishes","Burger avec double flit de Kefta ananas roquette tomates ,cheese et sauce sur fond blanc",9.0,4,25));
 
         adapter2=new PizaAdapter(foodDS);
         recPop.setAdapter(adapter2);

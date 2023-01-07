@@ -17,7 +17,7 @@ import com.google.firebase.FirebaseApp;
 
 
 public class Step4 extends AppCompatActivity {
-    private static int SPLASH_SCREEN_TIME=5000;
+    private static int SPLASH_SCREEN_TIME=3000;
     public static SharedPreferences sharedPreferences; // to save info of user in this action to store data
     public static SharedPreferences.Editor editor;
     public static String user_id;

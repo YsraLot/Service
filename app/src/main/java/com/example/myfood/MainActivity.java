@@ -144,14 +144,17 @@ bntm.setOnClickListener(new View.OnClickListener() {
         recPop=findViewById(R.id.view2);
         recPop.setLayoutManager(linearLayoutManager);
         ArrayList<FoodD> foodDS=new ArrayList<>();
-        foodDS.add(new FoodD("Plumbing service ","userpng","Ahmed omar \n Provides a range of services to install, maintain, and repair plumbing systems in residential and commercial buildings",4.5,4,25));
-        foodDS.add(new FoodD("Electricity service","userpng"," Imad \n Allow customers to purchase renewable energy, such as solar or wind power, to meet their electricity needs",4.5,5,20));
-        foodDS.add(new FoodD("Reparing service","userpng","Tomate, mozzarella, gruyère râpé, champignon, tomates fraîches, oignons confits épices, olives. \n\n Petite 5 / Moyenne 9 / Large 12",4.5,5,20));
-        foodDS.add(new FoodD("Technology service","userpng","Il y a (presque) tout : poivrons rouges rôtis, bébés épinards, oignons, champignons, tomates et olives noires. Il est également garni de trois sortes de fromages - feta, provolone et mozzarella - et saupoudré d'assaisonnement à l'ail et aux herbes. \n\n Petite 5 / Moyenne 9 / Large 12",45.0,4,23));
-        foodDS.add(new FoodD("Painting service","userpng","Tomate, mozzarella, gruyère râpé, boeuf, tomates fraîches, oignons confits épices, olives. \n\n Petite 5 / Moyenne 9 / Large 12",4.5,5,20));
-
-
-
+        foodDS.add(new FoodD("Plumbing service ","plumbing","Ahmed omar \n Provides a range of services to install, maintain, and repair plumbing systems in residential and commercial buildings",4.5,4,25));
+        foodDS.add(new FoodD("Electricity service","electricity"," Imad \n Allow customers to purchase renewable energy, such as solar or wind power, to meet their electricity needs",4.5,5,20));
+        foodDS.add(new FoodD("Reparing service","reparing","Tomate, mozzarella, gruyère râpé, champignon, tomates fraîches, oignons confits épices, olives. \n\n Petite 5 / Moyenne 9 / Large 12",4.5,5,20));
+        foodDS.add(new FoodD("Laundry service","laundry","Burger avec double filet de poulet ananas roquette tomates,cheese et sauce sur fond blanc",9.0,4,25));
+        foodDS.add(new FoodD("Sterilization home service","nettoyage","Burger avec flit de Kefta ananas roquette tomates ,cheese et sauce sur fond blanc",4.5,4,25));
+        foodDS.add(new FoodD("Hairdressing service","hairdress","Recette Poulet aux olives et citrons confits",9.0,4,25));
+        foodDS.add(new FoodD("Reparing service","reparing","Tomate, mozzarella, gruyère râpé, champignon, tomates fraîches, oignons confits épices, olives. \n\n Petite 5 / Moyenne 9 / Large 12",4.5,5,20));
+        foodDS.add(new FoodD("Laundry service","laundry","Burger avec double filet de poulet ananas roquette tomates,cheese et sauce sur fond blanc",9.0,4,25));
+        foodDS.add(new FoodD("Manicure and pedicure service","manicure","poulet avec riz , carottes coupées , poivrons vert,et oignons rouges",4.5,4,25));
+        foodDS.add(new FoodD("Pets walking service","walking","Toutes les légumes,et Kefta",2.0,4,25));
+        foodDS.add(new FoodD("Pets training service","training","Toutes les légumes,et thon",1.7,4,25));
         adapter2=new PopAdapter(foodDS);
         recPop.setAdapter(adapter2);
     }
