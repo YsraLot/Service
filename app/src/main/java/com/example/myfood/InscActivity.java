@@ -28,12 +28,12 @@ public ConstraintLayout ins;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_insc);
-        p=findViewById(R.id.p);
-        n=findViewById(R.id.n);
-        e=findViewById(R.id.e);
-        t=findViewById(R.id.t);
+        p=findViewById(R.id.p);// First name
+        n=findViewById(R.id.n);// last name
+        e=findViewById(R.id.e);// email
+        t=findViewById(R.id.t);// phone
 
-        ins=findViewById(R.id.ins);
+        ins=findViewById(R.id.ins);// layout inscription
         fr=FirebaseAuth.getInstance();
 
 //button pour l'enregistrement
@@ -43,6 +43,7 @@ public ConstraintLayout ins;
                 database = FirebaseDatabase.getInstance();
                 myRef=database.getReference("Clients");
                 //Get all vallues
+
                 String email= e.getText().toString().trim();
                 if(email.isEmpty()) {
                     e.setError("Please enter your email");
@@ -51,6 +52,7 @@ public ConstraintLayout ins;
                     e.setError("Please enter a valid email address");
                     return ;
                 }
+
                 String nom=n.getText().toString().trim();
                 if(nom.isEmpty()) {
                     n.setError("please enter your name");
@@ -62,8 +64,8 @@ public ConstraintLayout ins;
                     n.setError("Username too small");
                     return ;
                 }
-                prenom=p.getText().toString().trim();
 
+                prenom=p.getText().toString().trim();
                 if(prenom.isEmpty()) {
                     p.setError("please enter your name");
                     return;
@@ -74,20 +76,25 @@ public ConstraintLayout ins;
                     p.setError("Username too small");
                     return ;
                 }
-                String numero=t.getText().toString().trim();
 
+                String numero=t.getText().toString().trim();
                 if(numero.isEmpty()) {
                     t.setError("please enter your numero");
                     return;
                 }else if(numero.length()<10) {
                     t.setError("number not correct");
                     return;
-                }else if(numero.length()>=11) {
+                }
+                else if(numero.length()>=11) {
                     t.setError("number not correct");
                     return;
                 }
+
                Client cl=new Client(prenom,nom,email,numero);
                 myRef.child(nom).setValue(cl);
+
+// I need to create login interface to verify clients if in database
+
 
                 Toast.makeText(InscActivity.this, "Bien Enregistre", Toast.LENGTH_SHORT).show();
 //-----------------

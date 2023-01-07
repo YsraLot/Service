@@ -9,6 +9,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFood">
         <activity
+            android:name=".LoginActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".ConfActivity"
             android:exported="false" />
         <activity
@@ -16,9 +23,7 @@
             android:exported="false" />
         <activity
             android:name=".PaimActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".ProfileActivity"
             android:exported="false" />
@@ -61,8 +66,6 @@
         <activity
             android:name=".InscActivity"
             android:exported="false" />
-
-
         <activity
             android:name=".PageActivity"
             android:exported="false" />
@@ -105,7 +108,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>
