@@ -1,16 +1,16 @@
 package com.example.myfood;
 
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
+
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
@@ -21,7 +21,7 @@ public EditText p,n,e,t;
 public String prenom;
 public ConstraintLayout ins;
 
-    public FirebaseAuth fr;
+    public FirebaseAuth mAuth;
     private FirebaseDatabase database;
     private DatabaseReference myRef,mn;
     @Override
@@ -34,9 +34,9 @@ public ConstraintLayout ins;
         t=findViewById(R.id.t);// phone
 
         ins=findViewById(R.id.ins);// layout inscription
-        fr=FirebaseAuth.getInstance();
+        mAuth=FirebaseAuth.getInstance();
 
-//button pour l'enregistrement
+//button pour l sig up
         ins.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -90,21 +90,16 @@ public ConstraintLayout ins;
                     return;
                 }
 
-               Client cl=new Client(prenom,nom,email,numero);
-                myRef.child(nom).setValue(cl);
 
-// I need to create login interface to verify clients if in database
-
-
+                // upload data to firebase
+                Client cl=new Client(prenom, nom, email,numero);
+                myRef.child(numero).setValue(cl);
                 Toast.makeText(InscActivity.this, "Bien Enregistre", Toast.LENGTH_SHORT).show();
-//-----------------
-                Intent intent=new Intent(InscActivity.this,MainActivity.class);
-                intent.putExtra("prenom",p.getText().toString());
-                intent.putExtra("nom",n.getText().toString());
-                intent.putExtra("email",e.getText().toString());
-                intent.putExtra("tele",t.getText().toString());
+
+
+                Intent intent=new Intent(InscActivity.this,LoginActivity.class);
                 startActivity(intent);
-//----------------
+
 
             }
         });
