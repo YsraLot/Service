@@ -97,7 +97,7 @@ public ConstraintLayout ins;
                 Toast.makeText(InscActivity.this, "Bien Enregistre", Toast.LENGTH_SHORT).show();
 
 
-                Intent intent=new Intent(InscActivity.this,LoginActivity.class);
+                Intent intent=new Intent(InscActivity.this,MainActivity.class);
                 startActivity(intent);
 
 
