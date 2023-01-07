@@ -174,7 +174,21 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/have_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I have Account"
+                android:textSize="20sp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="20dp"
+               android:textStyle="bold"
+                android:textColor="#1B0F29"
+
+                />
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

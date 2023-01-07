@@ -90,6 +90,17 @@
                     android:inputType="textPersonName"
                     android:textColor="#090909"
                     android:textColorHint="#B3B1B1" />
+                <TextView
+                    android:id="@+id/forgot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Forgot Password?"
+                    android:textColor="#1B0F29"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="200dp"
+                    />
 
 
 
@@ -118,6 +129,17 @@
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
+                <TextView
+                    android:id="@+id/CrtAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Create Account"
+                    android:textColor="#1B0F29"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="200dp"
+                    />
 
             </LinearLayout>
 
