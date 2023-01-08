@@ -67,7 +67,7 @@
         android:textSize="18sp"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        />  ,
+        />
 
 
 </RelativeLayout>
