@@ -20,7 +20,6 @@ public class SignUpProvider extends AppCompatActivity {
     public String prenom;
     public ConstraintLayout ins;
     public TextView changerole;
-    public TextView providerLogin;
     public FirebaseAuth mAuth;
     private FirebaseDatabase database;
     private DatabaseReference myRef,mn;
@@ -36,7 +35,6 @@ public class SignUpProvider extends AppCompatActivity {
         e=findViewById(R.id.e72);// email
         t=findViewById(R.id.t72);// phone
 
-        providerLogin= findViewById(R.id.providerLogin1);
         changerole=findViewById(R.id.ClientLogin);
         ins=findViewById(R.id.ins);// layout inscription
         mAuth=FirebaseAuth.getInstance();
@@ -51,16 +49,6 @@ public class SignUpProvider extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        // provider login
-        providerLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent1=new Intent(SignUpProvider.this,LoginActivity.class);
-                startActivity(intent1);
-            }
-        });
-
 
 
 //button pour l sig up

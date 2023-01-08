@@ -174,25 +174,6 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingTop="6dp"
-                >
-                <TextView
-                    android:id="@+id/providerLogin1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="I have Account"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:textColor="#1B0F29"
-
-                    />
-
-
-            </LinearLayout>
 
 
 

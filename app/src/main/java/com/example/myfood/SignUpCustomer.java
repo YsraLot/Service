@@ -132,7 +132,7 @@ public class SignUpCustomer extends AppCompatActivity {
                 // w mashi  Intent intent=new Intent(InscActivity.this,MainActivity.class);
                 //          startActivity(intent);
                 // hado kano deja
-                Intent intent=new Intent(SignUpCustomer.this,MainActivity.class);
+                Intent intent=new Intent(SignUpCustomer.this,LoginActivity.class);
                 intent.putExtra("prenom",p.getText().toString());
                 intent.putExtra("nom",n.getText().toString());
                 intent.putExtra("email",e.getText().toString());
