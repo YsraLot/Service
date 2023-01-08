@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 public class ProviderDash extends AppCompatActivity {
 
-    private ImageView category1,category2,category3;
+    private ImageView category1,category2,category3,category4;
 
 
     @Override
@@ -47,6 +47,22 @@ public class ProviderDash extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+
+
+        category4=findViewById(R.id.Image_category4);
+        category4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent =new Intent(ProviderDash.this,ProviderAddService.class);// edit MainActivity.class to your add category
+                intent.putExtra("services","service4");
+                startActivity(intent);
+            }
+        });
+
+
+
 
     }
 }

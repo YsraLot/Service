@@ -144,11 +144,11 @@ bntm.setOnClickListener(new View.OnClickListener() {
         recPop=findViewById(R.id.view2);
         recPop.setLayoutManager(linearLayoutManager);
         ArrayList<FoodD> foodDS=new ArrayList<>();
+        foodDS.add(new FoodD("Laundry service","laundry","Burger avec double filet de poulet ananas roquette tomates,cheese et sauce sur fond blanc",9.0,4,25));
+        foodDS.add(new FoodD("Sterilization home service","nettoyage","Burger avec flit de Kefta ananas roquette tomates ,cheese et sauce sur fond blanc",4.5,4,25));
         foodDS.add(new FoodD("Plumbing service ","plumbing","Ahmed omar \n Provides a range of services to install, maintain, and repair plumbing systems in residential and commercial buildings",4.5,4,25));
         foodDS.add(new FoodD("Electricity service","electricity"," Imad \n Allow customers to purchase renewable energy, such as solar or wind power, to meet their electricity needs",4.5,5,20));
         foodDS.add(new FoodD("Reparing service","reparing","Tomate, mozzarella, gruyère râpé, champignon, tomates fraîches, oignons confits épices, olives. \n\n Petite 5 / Moyenne 9 / Large 12",4.5,5,20));
-        foodDS.add(new FoodD("Laundry service","laundry","Burger avec double filet de poulet ananas roquette tomates,cheese et sauce sur fond blanc",9.0,4,25));
-        foodDS.add(new FoodD("Sterilization home service","nettoyage","Burger avec flit de Kefta ananas roquette tomates ,cheese et sauce sur fond blanc",4.5,4,25));
         foodDS.add(new FoodD("Hairdressing service","hairdress","Recette Poulet aux olives et citrons confits",9.0,4,25));
         foodDS.add(new FoodD("Reparing service","reparing","Tomate, mozzarella, gruyère râpé, champignon, tomates fraîches, oignons confits épices, olives. \n\n Petite 5 / Moyenne 9 / Large 12",4.5,5,20));
         foodDS.add(new FoodD("Laundry service","laundry","Burger avec double filet de poulet ananas roquette tomates,cheese et sauce sur fond blanc",9.0,4,25));
@@ -164,10 +164,10 @@ bntm.setOnClickListener(new View.OnClickListener() {
         recCateg=findViewById(R.id.view1);
         recCateg.setLayoutManager(linearLayoutManager);
         ArrayList<CategoryD> categoryD=new ArrayList<>();
-        categoryD.add(new CategoryD("House hold","household"));
-        categoryD.add(new CategoryD("Cleaning","cleaning"));
-        categoryD.add(new CategoryD("Beauty","beauty"));
-        categoryD.add(new CategoryD("Pets","pets"));
+        categoryD.add(new CategoryD("House hold","cat1"));
+        categoryD.add(new CategoryD("Cleaning","cat2"));
+        categoryD.add(new CategoryD("Beauty","cat3"));
+        categoryD.add(new CategoryD("Pets","cat4"));
 
         adapter=new CateAdapter(categoryD);
         recCateg.setAdapter(adapter);

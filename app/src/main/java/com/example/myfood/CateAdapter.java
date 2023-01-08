@@ -35,20 +35,20 @@ holder.categoryName.setText(categoryDS.get(position).getTitre());
 String picUrl="";
 switch (position) {
     case 0: {
-        picUrl = "household";
+        picUrl = "cat1";
         break;
     }
     case 1: {
-        picUrl = "cleaning";
+        picUrl = "cat2";
         break;
     }
     case 2: {
-        picUrl = "beauty";
+        picUrl = "cat3";
         break;
     }
 
     case 3: {
-        picUrl = "pets";
+        picUrl = "cat4";
         break;
     }
 

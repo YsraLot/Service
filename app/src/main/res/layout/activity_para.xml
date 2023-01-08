@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1B0F29"
+    android:background="@color/white"
     tools:context=".ParaActivity">
 
     <ScrollView
@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Édit le profile"
-                android:textColor="#fffff0"
+                android:textColor="#000"
                 android:visibility="gone" />
 
             <TextView
@@ -37,7 +37,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Édit le profile"
-                android:textColor="#fffff0"
+                android:textColor="#000"
                 android:visibility="gone" />
 
             <TextView
@@ -46,7 +46,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Édit le profile"
-                android:textColor="#fffff0"
+                android:textColor="#000"
                 android:visibility="gone" />
 
             <TextView
@@ -55,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Édit le profile"
-                android:textColor="#fffff0"
+                android:textColor="#000"
                 android:visibility="gone" />
 
             <TextView
@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Contact"
-                android:textColor="#FFFFF0"
+                android:textColor="@color/galax"
                 android:textSize="35sp"
                 android:textStyle="bold" />
 
@@ -84,7 +84,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="16dp"
                 android:text="You can Use"
-                android:textColor="#fffff0"
+                android:textColor="#000"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -108,7 +108,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Phone"
-                    android:textColor="#fffff0"
+                    android:textColor="#000"
                     android:textSize="18sp" />
             </LinearLayout>
 
@@ -142,7 +142,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Localisation"
-                    android:textColor="#fffff0"
+                    android:textColor="#000"
                     android:textSize="18sp" />
             </LinearLayout>
 
@@ -176,7 +176,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="SMS"
-                    android:textColor="#fffff0"
+                    android:textColor="#000"
                     android:textSize="18sp" />
             </LinearLayout>
 
@@ -188,7 +188,7 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="16dp"
                 android:text="Services "
-                android:textColor="#fffff0"
+                android:textColor="#000"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -211,7 +211,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="SM"
-                    android:textColor="#fffff0"
+                    android:textColor="#000"
                     android:textSize="18sp" />
 
                 <TextView
@@ -244,7 +244,7 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="16dp"
                 android:text="Historique"
-                android:textColor="#070707"
+                android:textColor="@color/galax"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -260,15 +260,15 @@
                     android:layout_width="122dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/coo" />
+                    app:srcCompat="@drawable/demand" />
 
                 <TextView
                     android:id="@+id/textView29"
                     android:layout_width="292dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Commandes"
-                    android:textColor="#fffff0"
+                    android:text="Service demand"
+                    android:textColor="#000"
                     android:textSize="18sp" />
             </LinearLayout>
 
@@ -301,8 +301,8 @@
                     android:layout_width="292dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Menu"
-                    android:textColor="#fffff0"
+                    android:text="List of services"
+                    android:textColor="#000"
                     android:textSize="18sp" />
             </LinearLayout>
 
@@ -335,8 +335,8 @@
                     android:layout_width="292dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Termes et conditions"
-                    android:textColor="#fffff0"
+                    android:text="Termes and conditions"
+                    android:textColor="#000"
                     android:textSize="18sp" />
             </LinearLayout>
 
@@ -369,8 +369,8 @@
                     android:layout_width="292dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Déconnexion"
-                    android:textColor="#fffff0"
+                    android:text="Log out"
+                    android:textColor="#000"
                     android:textSize="18sp" />
             </LinearLayout>
 

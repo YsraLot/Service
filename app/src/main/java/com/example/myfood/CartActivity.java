@@ -139,7 +139,7 @@ initList();
 
     private void calculateCard() {
         double percentax=0.02;//you can change this item for tax price
-        double delivery=10;//you can change this item for delivery
+        double delivery=1;//you can change this item for delivery
         tax=Math.round((managementCart.getTotalFree()*percentax)*100.0) / 100.0;
         double total=Math.round((managementCart.getTotalFree()+tax+delivery)*100.0)/100.0;
         double itemTotal=Math.round(managementCart.getTotalFree()*100.0)/100.0;
@@ -150,7 +150,7 @@ initList();
     }
 
     private void initView() {
-totalFeeTxt=findViewById(R.id.totalFeeTxt);
+        totalFeeTxt=findViewById(R.id.totalFeeTxt);
         taxTxt=findViewById(R.id.taxTxt);
         deleveryTxt=findViewById(R.id.deleveryTxt);
         totalTxt=findViewById(R.id.totalTxt);
