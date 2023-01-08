@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "81768130159",
+    "project_id": "service-bbc1c",
+    "storage_bucket": "service-bbc1c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81768130159:android:00b3f4cb6b38c224214f9a",
+        "android_client_info": {
+          "package_name": "com.example.myfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "81768130159-ro5q21sljp7su4fbu6503o0p24r6hu7q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr71A-BqYvqJ_-oUu0vwul6VN47utGUWw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "81768130159-ro5q21sljp7su4fbu6503o0p24r6hu7q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
