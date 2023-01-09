@@ -30,32 +30,31 @@ Le prestataire de services peut s'inscrire et ajouter un service avec une petite
 
 ### 2. Présentation de la réalisation : Mode client (Customer)
 
-<img src="https://user-images.githubusercontent.com/99830093/211314122-b938355f-0469-4fe0-9a0f-b6a5da4efb3a.jpg" width="200" ><img src="https://user-images.githubusercontent.com/99830093/211314446-c6a60369-7d07-4a52-b167-53c5454c0883.jpg" width="200" ><img src="https://user-images.githubusercontent.com/99830093/211314474-6493c58d-544b-4f1e-960b-9fee4bca3f2a.jpg" width="200" ><img src="https://user-images.githubusercontent.com/99830093/211314585-61f32eab-e908-4996-8049-675ccbfdab8f.jpg" width="200" ><img src="https://user-images.githubusercontent.com/99830093/211314632-41dc4ac3-2474-4944-8d11-9d97d820a528.jpg" width="200" >
-
-<img src="https://user-images.githubusercontent.com/99830093/211314662-a0a69b97-2b43-4a13-b00c-857ede32f3f0.jpg" width="200" ><img src="https://user-images.githubusercontent.com/99830093/211314684-0268e332-e1bb-4b48-9463-c8a4cabc880b.jpg" width="200" ><img src="https://user-images.githubusercontent.com/99830093/211314708-78dd0372-a66d-473f-a979-83658cf869d0.jpg" width="200" ><img src="https://user-images.githubusercontent.com/99830093/211314734-43b1296b-75a1-43c7-93a1-933e74445f43.jpg" width="200" ><img src="https://user-images.githubusercontent.com/99830093/211314760-ad2b9817-78e6-4b43-9729-ec858bb7ff0e.jpg" width="200" >
-
-<img src="https://user-images.githubusercontent.com/99830093/211314802-2b3e9c4a-d238-425a-8859-936f1bc4453c.jpg" width="200" ><img src="https://user-images.githubusercontent.com/99830093/211314819-14ab5448-db92-4777-b9a8-02b8c0fdca40.jpg" width="200" >
+<img src="https://user-images.githubusercontent.com/99830093/211314122-b938355f-0469-4fe0-9a0f-b6a5da4efb3a.jpg" width="200" ><img src="https://user-images.githubusercontent.com/99830093/211314446-c6a60369-7d07-4a52-b167-53c5454c0883.jpg" width="200" ><img src="https://user-images.githubusercontent.com/99830093/211314474-6493c58d-544b-4f1e-960b-9fee4bca3f2a.jpg" width="200" ><img src="https://user-images.githubusercontent.com/99830093/211314585-61f32eab-e908-4996-8049-675ccbfdab8f.jpg" width="200" ><img src="https://user-images.githubusercontent.com/99830093/211314662-a0a69b97-2b43-4a13-b00c-857ede32f3f0.jpg" width="200" >
+<br />
+<img src="https://user-images.githubusercontent.com/99830093/211314632-41dc4ac3-2474-4944-8d11-9d97d820a528.jpg" width="200" ><img src="https://user-images.githubusercontent.com/99830093/211314708-78dd0372-a66d-473f-a979-83658cf869d0.jpg" width="200" ><img src="https://user-images.githubusercontent.com/99830093/211314760-ad2b9817-78e6-4b43-9729-ec858bb7ff0e.jpg" width="200" ><img src="https://user-images.githubusercontent.com/99830093/211314802-2b3e9c4a-d238-425a-8859-936f1bc4453c.jpg" width="200" ><img src="https://user-images.githubusercontent.com/99830093/211314684-0268e332-e1bb-4b48-9463-c8a4cabc880b.jpg" width="200" >
 
 
-
-
-
-
+<img src="https://user-images.githubusercontent.com/99830093/211314734-43b1296b-75a1-43c7-93a1-933e74445f43.jpg" width="200" ><img src="https://user-images.githubusercontent.com/99830093/211314819-14ab5448-db92-4777-b9a8-02b8c0fdca40.jpg" width="200" >
 
 
 
 ## Used Library
 ```python
-* 'com.google.firebase:firebase-analytics:21.2.0'
-* 'com.google.firebase:firebase-database:20.1.0'
-* 'com.google.firebase:firebase-storage:20.1.0'
-* 'com.google.firebase:firebase-messaging:23.1.1'
-* 'com.google.firebase:firebase-auth:21.1.0'
-* 'com.github.CanHub:Android-Image-Cropper:4.3.0'
-* 'com.hbb20:ccp:2.6.1'
-* 'com.cepheuen.elegant-number-button:lib:1.0.2'
-* 'androidx.recyclerview:recyclerview:1.2.1'
-* 'androidx.navigation:navigation-ui:2.5.3'
+*'androidx.appcompat:appcompat:1.4.2'
+*'com.google.android.material:material:1.6.1'
+*'androidx.constraintlayout:constraintlayout:2.1.4'
+*'com.github.bumptech.glide:glide:4.13.2'
+*'com.google.code.gson:gson:2.9.1'
+*'com.google.firebase:firebase-auth:21.0.8'
+*'com.google.firebase:firebase-database:20.0.6'
+*'com.google.firebase:firebase-firestore:24.4.1'
+*'com.google.firebase:firebase-storage:20.1.0'
+*'com.google.firebase:firebase-functions:20.2.1'
+*'com.google.firebase:firebase-analytics:21.2.0'
+*'junit:junit:4.13.2'
+*'androidx.test.ext:junit:1.1.3'
+*'androidx.test.espresso:espresso-core:3.4.0'
 ```
 
 ## Authors
